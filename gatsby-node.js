@@ -9,7 +9,109 @@
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     const produce = [
         {
+            name: 'Beans, Shell',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
             name: 'Beets',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Cabbage',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Carrots',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Onions',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Parsnips',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Potatoes',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Squash, Winter',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Turnips',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Beans, Shell',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Beets',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Cabbage',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Carrots',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Onions',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Parsnips',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Potatoes',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Squash, Winter',
+            type: 'VEGETABLE',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Turnips',
             type: 'VEGETABLE',
             month: 'January',
             location: 'New York',
@@ -17,7 +119,13 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
         {
             name: 'Apples',
             type: 'FRUIT',
-            month: 'July',
+            month: 'January',
+            location: 'New York',
+        },
+        {
+            name: 'Pears',
+            type: 'FRUIT',
+            month: 'January',
             location: 'New York',
         }
     ]
