@@ -2,23 +2,27 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 300,
+    height: props => props.cardHeight,
+    width: props => props.cardWidth
   },
   media: {
-    height: 150,
-  },
+    height: props => props.mediaHeight
+  }
 });
 
-export default function ProduceCard(props) {
-  const classes = useStyles();
+export default function ContentCard(props) {
+  const styleProps = {
+    cardHeight: props.type === 'season' ? '80vh' : '40vh',
+    cardWidth: props.type === 'season' ? '20vw' : '12.5vw',
+    mediaHeight: props.type === 'season' ? '62.5vh' : '20vh',
+  }
+  const classes = useStyles(styleProps);
 
   return (
     <Card className={classes.card}>
@@ -30,21 +34,14 @@ export default function ProduceCard(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {props.name}
+            {props.data}
           </Typography>
-          <Typography className={classes.pos} color="textSecondary">
-            {props.type}
-          </Typography>
-          <Typography variant="body2" component="p">
-            super fun description here
+          <Typography variant="body2" color="textSecondary" component="p">
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+            across all continents except Antarctica
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          clicky
-        </Button>
-      </CardActions>
     </Card>
   );
 }
