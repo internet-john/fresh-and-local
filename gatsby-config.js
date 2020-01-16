@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Fresh and Local`,
+    title: `Fresh & Local`,
     description: `Find out what's fresh and local`,
     author: `@john-src`,
   },
