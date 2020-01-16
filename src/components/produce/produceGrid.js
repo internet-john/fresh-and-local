@@ -6,9 +6,9 @@ import Grid from '@material-ui/core/Grid';
 import ProduceCard from './produceCard';
 
 const useStyles = makeStyles(theme => ({
-  // root: {
-  //   flexGrow: 1,
-  // }
+  root: {
+    flexGrow: 1,
+  }
 }));
 
 export default function ProduceGrid() {
