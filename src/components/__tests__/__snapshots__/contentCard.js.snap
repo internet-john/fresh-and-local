@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentCard Displays header and content fields for season card 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root makeStyles-winter-2 MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <a
+    className="makeStyles-link-1"
+    href="/winter"
+  >
+    <button
+      className="MuiButtonBase-root MuiCardActionArea-root"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <div
+        className="MuiCardMedia-root"
+        title=""
+      />
+      <div
+        className="MuiCardContent-root"
+      >
+        <h5
+          className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+        >
+          Winter
+        </h5>
+        <p
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+        >
+          December 21 - March 19 2020
+        </p>
+      </div>
+      <span
+        className="MuiCardActionArea-focusHighlight"
+      />
+    </button>
+  </a>
+</div>
+`;
+
+exports[`ContentCard Displays node name, type for produce card 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <button
+    className="MuiButtonBase-root MuiCardActionArea-root"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <div
+      className="MuiCardMedia-root"
+      title=""
+    />
+    <div
+      className="MuiCardContent-root"
+    >
+      <h1
+        className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+      />
+      <h3
+        className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+      />
+      <p
+        className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+      />
+      <p
+        className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+      />
+    </div>
+    <span
+      className="MuiCardActionArea-focusHighlight"
+    />
+    <span
+      className="MuiTouchRipple-root"
+    />
+  </button>
+</div>
+`;
+
+exports[`ContentCard renders correctly 1`] = `null`;

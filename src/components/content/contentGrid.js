@@ -7,28 +7,32 @@ import ContentCard from './contentCard';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    marginBottom: '10px'
   }
 }));
 
 export default function ContentGrid(props) {
   const classes = useStyles();
-  const seasons = ["Winter", "Spring", "Summer", "Fall"];
-  const months = ["January", "February", "March",  "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const uiData = props.type === 'season' ? seasons : months;
-  // const handleOnClick = () => {};
+  let gridData = props.data;
+
+  if (!props.showFruit && props.showVeg) {
+    gridData = gridData.filter(produce => produce.node && produce.node.type && produce.node.type === 'VEGETABLE');
+  } else if (props.showFruit && !props.showVeg) {
+    gridData = gridData.filter(produce => produce.node && produce.node.type && produce.node.type === 'FRUIT');
+  } else if (!props.showFruit && !props.showVeg) {
+    gridData = [];
+  }
 
   return (
     <Grid container className={classes.root} spacing={1}>
-      <Grid item xs={12}>
-        <Grid container justify="" spacing={1}>
-        {uiData.map((data, idx) => 
-            <Grid key={idx} item>
-              <ContentCard type={props.type} data={data} />
+      <Grid>
+        <Grid container spacing={1}>
+        {gridData && gridData.map((data, idx) => 
+            <Grid key={idx} item xs={props.context === 'HOME_PG' ? 12 : 3}>
+              <ContentCard context={props.context} data={data} />
             </Grid>
         )}    
         </Grid>
-      </Grid>
-      <Grid item xs={12}>
       </Grid>
     </Grid>
   );

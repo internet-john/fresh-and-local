@@ -1,12 +1,12 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import Header from "../header";
+import ContentGrid from "../content/contentGrid";
 
-describe("Header", () => {
+describe("ContentGrid", () => {
   it("renders correctly", () => {
     const tree = renderer
-      .create(<Header siteTitle="Fresh and Local" />)
+      .create(<ContentGrid />)
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
