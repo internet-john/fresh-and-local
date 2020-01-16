@@ -2,7 +2,7 @@ import React from "react"
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-import MonthCard from './monthCard';
+import ContentCard from './contentCard';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -10,20 +10,20 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function MonthGrid() {
+export default function ContentGrid(props) {
   const classes = useStyles();
+  const seasons = ["Winter", "Spring", "Summer", "Fall"];
   const months = ["January", "February", "March",  "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const handleOnClick = e => {
-      console.log(e);
-  }
-  // set up handle click on specific card to reveal whats in season that month
+  const uiData = props.type === 'season' ? seasons : months;
+  // const handleOnClick = () => {};
+
   return (
     <Grid container className={classes.root} spacing={1}>
       <Grid item xs={12}>
         <Grid container justify="" spacing={1}>
-        {months.map((month, idx) => 
+        {uiData.map((data, idx) => 
             <Grid key={idx} item>
-              <MonthCard month={month}/>
+              <ContentCard type={props.type} data={data} />
             </Grid>
         )}    
         </Grid>
