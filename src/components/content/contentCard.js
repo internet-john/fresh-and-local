@@ -10,14 +10,16 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 220,
+    maxWidth: 300,
   },
   media: {
     height: 150,
   },
 });
 
-export default function MonthCard(props) {
+
+// for seasons, months, produce
+export default function ContentCard(props) {
   const classes = useStyles();
 
   return (
@@ -30,17 +32,19 @@ export default function MonthCard(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {props.month}
+            {props.name}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          <Typography className={classes.pos} color="textSecondary">
+            {props.type}
+          </Typography>
+          <Typography variant="body2" component="p">
+            super fun description here
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          See produce
+          clicky
         </Button>
       </CardActions>
     </Card>
