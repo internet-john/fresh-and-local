@@ -1,25 +1,15 @@
 import React from "react"
 
-import Layout from "../components/layout"
-
-/**
- * 
- * TODO: 
- *   - STANDARDIZE GRIDS AND CARDS INTO A GENERALIZED COMPONENT, FOR SEASONS, MONTHS, PRODUCE
- * 
- */
-import ProduceGrid from "../components/produce/produceGrid" 
-// import MonthGrid from "../components/month/monthGrid"
-
-
 import SEO from "../components/seo"
+import Layout from "../components/layout"
+import ContentGrid from "../components/content/ContentGrid";
+
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <ProduceGrid />
-    {/* <MonthGrid /> */}
+    <ContentGrid type="month"/>
   </Layout>
 )
 
-export default IndexPage
+export default IndexPage;
