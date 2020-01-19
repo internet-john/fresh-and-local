@@ -1,10 +1,6 @@
 /**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
+ * TODO: Move data to CDN
  */
-
-// You can delete this file if you're not using it
 
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     const produce = [

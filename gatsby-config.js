@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Fresh & Local`,
+    title: `Fresh & Local.`,
     description: `Find out what's fresh and local`,
     author: `@john-src`,
   },
@@ -18,11 +18,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `fresh-and-local`,
+        short_name: `f-y-l`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
