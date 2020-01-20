@@ -11,6 +11,18 @@ const useStyles = makeStyles({
   link: {
     textDecoration: 'inherit',
     color: 'inherit'
+  },
+  winter: {
+    backgroundColor: '#C4FAF8'
+  },
+  spring: {
+    backgroundColor: '#FBE4FF'
+  },
+  summer: {
+    backgroundColor: '#F9CC6C'
+  },
+  fall: {
+    backgroundColor: '#EBE6CA'
   }
 });
 
@@ -19,7 +31,7 @@ export default function ContentCard(props) {
 
   return (
     props.orientation === 'landscape' ? 
-      <Card>
+      <Card className={classes[props.data.toLowerCase()]}>
         <Link className={classes.link} to={`/${props.data.toLowerCase()}/`}>
         <CardActionArea>
           <CardMedia

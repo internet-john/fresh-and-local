@@ -22,7 +22,7 @@ const SummerGrid = () => {
 
   return (
     <>
-      <ContentGrid orientation={'portrait'} data={[...data.allVegetable.edges]}  />
+      <ContentGrid data={[...data.allVegetable.edges]}  />
     </>
   );
 };
