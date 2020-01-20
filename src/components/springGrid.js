@@ -6,13 +6,30 @@ import ContentGrid from "./content/ContentGrid";
 const SpringGrid = () => { 
   const data = useStaticQuery(graphql`
     query SpringProduceQuery {
-      allVegetable {
+      allVegetable(filter: {
+        freshMonths: {in: [3,4,5]} 
+      }) {
         edges {
           node {
             id
             name
             type
-            month
+            storageMonths
+            freshMonths
+            location
+          }
+        }
+      }
+      allFruit(filter: {
+        freshMonths: {in: [3,4,5]} 
+      }) {
+        edges {
+          node {
+            id
+            name
+            type
+            storageMonths
+            freshMonths
             location
           }
         }
@@ -22,7 +39,7 @@ const SpringGrid = () => {
 
   return (
     <>
-      <ContentGrid data={[...data.allVegetable.edges]}  />
+      <ContentGrid data={[...data.allVegetable.edges, ...data.allFruit.edges]}  />
     </>
   );
 };

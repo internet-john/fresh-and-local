@@ -6,13 +6,30 @@ import ContentGrid from "./content/ContentGrid";
 const SummerGrid = () => { 
   const data = useStaticQuery(graphql`
     query SummerProduceQuery {
-      allVegetable {
+      allVegetable(filter: {
+        freshMonths: {in: [6,7,8]} 
+      }) {
         edges {
           node {
             id
             name
             type
-            month
+            storageMonths
+            freshMonths
+            location
+          }
+        }
+      }
+      allFruit(filter: {
+        freshMonths: {in: [6,7,8]} 
+      }) {
+        edges {
+          node {
+            id
+            name
+            type
+            storageMonths
+            freshMonths
             location
           }
         }
@@ -22,7 +39,7 @@ const SummerGrid = () => {
 
   return (
     <>
-      <ContentGrid data={[...data.allVegetable.edges]}  />
+      <ContentGrid data={[...data.allVegetable.edges, ...data.allFruit.edges]}  />
     </>
   );
 };

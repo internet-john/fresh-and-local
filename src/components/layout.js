@@ -36,8 +36,10 @@ const Layout = ({ children }) => {
       </div>
       <Typography component="div">
         <main>{children}</main>
+      </Typography>
+      <Typography>
         <footer style={{position: 'relative', width: '100vw', bottom: '0', marginTop: '10px'}}>
-          © {new Date().getFullYear()}, John Holman & Xavi Labs LLC
+            © {new Date().getFullYear()}, John Holman & Xavi Labs LLC
         </footer>
       </Typography>
       </Container>
