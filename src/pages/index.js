@@ -8,7 +8,7 @@ import ContentGrid from "../components/content/ContentGrid";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <ContentGrid type="month"/>
+    <ContentGrid orientation={'landscape'} data={['Winter', 'Spring', 'Summer', 'Fall']} />
   </Layout>
 )
 
