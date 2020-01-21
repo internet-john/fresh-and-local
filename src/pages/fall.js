@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ChipBar from "../components/chipBar";
-import FallGrid from "../components/FallGrid";
+import FallGrid from "../components/fallGrid";
 
 const handleDelete = () => {
   console.info('You clicked the delete icon.');

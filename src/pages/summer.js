@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ChipBar from "../components/chipBar";
-import SummerGrid from "../components/SummerGrid";
+import SummerGrid from "../components/summerGrid";
 
 const handleDelete = () => {
   console.info('You clicked the delete icon.');
