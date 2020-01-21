@@ -17,7 +17,7 @@ export default function ContentGrid(props) {
   return (
     <Grid container className={classes.root} spacing={1}>
       <Grid>
-        <Grid container justify="" spacing={1}>
+        <Grid container spacing={1}>
         {props.data.map((data, idx) => 
             <Grid key={idx} item xs={12}>
               <ContentCard orientation={props.orientation} data={data} />
