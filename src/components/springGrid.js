@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import ContentGrid from "./content/ContentGrid";
+import ContentGrid from "./content/contentGrid";
 
 const SpringGrid = () => { 
   const data = useStaticQuery(graphql`
