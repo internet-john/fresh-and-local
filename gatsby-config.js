@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/freshest`,
   siteMetadata: {
     title: `Fresh & Local.`,
     description: `Find out what's fresh and local`,
