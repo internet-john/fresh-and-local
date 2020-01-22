@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ChipBar from "../components/chipBar";
+import InfoBar from "../components/infoBar";
 import SpringGrid from "../components/springGrid";
 
 const handleDelete = () => {
@@ -14,7 +14,7 @@ const Spring = () => (
   <Layout>
     <SEO title="Spring produce" />
     <h1>sunshine and flowers</h1>
-    <ChipBar season="Spring" onDelete={handleDelete} />
+    <InfoBar season="Spring" onDelete={handleDelete} />
     <SpringGrid />
     <Link to="/">Go back to the homepage</Link>
   </Layout>
