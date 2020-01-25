@@ -6,29 +6,23 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       background: `transparent`,
-      marginBottom: `1rem`,
       color: `#000`,
-      fontSize: '36px'
+      fontSize: `48px`,
+      letterSpacing: `-7.5px`
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        padding: `1.45rem 0`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `#000`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+
+    <h1 style={{ margin: 0 }}>
+      <Link
+        to="/"
+        style={{
+          color: `#000`,
+          textDecoration: `none`,
+        }}
+      >
+        {siteTitle}
+      </Link>
+    </h1>
   </header>
 )
 

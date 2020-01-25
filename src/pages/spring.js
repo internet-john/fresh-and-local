@@ -13,7 +13,6 @@ const handleDelete = () => {
 const Spring = () => (
   <Layout>
     <SEO title="Spring produce" />
-    <h1>sunshine and flowers</h1>
     <InfoBar season="Spring" onDelete={handleDelete} />
     <SpringGrid />
     <Link to="/">Go back to the homepage</Link>

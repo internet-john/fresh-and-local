@@ -13,7 +13,6 @@ const handleDelete = () => {
 const Fall = () => (
   <Layout>
     <SEO title="Fall produce" />
-    <h1>hot chocolate and colorful leaves</h1>
     <InfoBar season="Fall" onDelete={handleDelete} />
     <FallGrid />
     <Link to="/">Go back to the homepage</Link>

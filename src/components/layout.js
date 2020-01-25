@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-import MenuIcon from '@material-ui/icons/Menu';
 
 import Header from "./header"
 
@@ -30,18 +29,17 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg">
-      <div style={{display: "flex", justifyContent: 'space-between'}}>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <MenuIcon fontSize="large" style={{marginTop: '50px'}}/>
-      </div>
-      <Typography component="div">
-        <main>{children}</main>
-      </Typography>
-      <Typography component="div">
-        <footer style={{position: 'relative', width: '100vw', bottom: '0', marginTop: '10px'}}>
-            © {new Date().getFullYear()}, John Holman & Xavi Labs LLC
-        </footer>
-      </Typography>
+        <div style={{display: "flex", justifyContent: 'space-between' }}>
+          <Header siteTitle={data.site.siteMetadata.title} />
+        </div>
+        <Typography component="div">
+          <main>{children}</main>
+        </Typography>
+        <Typography component="div">
+          <footer style={{position: 'relative', width: '100vw', bottom: '0', marginTop: '10px'}}>
+              © {new Date().getFullYear()}, John Holman & Xavi Labs LLC
+          </footer>
+        </Typography>
       </Container>
     </React.Fragment>
   )

@@ -31,20 +31,19 @@ export default function ContentCard(props) {
 
   return (
     props.orientation === 'landscape' ? 
-      <Card className={classes[props.data.toLowerCase()]}>
-        <Link className={classes.link} to={`/${props.data.toLowerCase()}/`}>
+      <Card className={classes[props.data.header.toLowerCase()]}>
+        <Link className={classes.link} to={`/${props.data.header.toLowerCase()}/`}>
         <CardActionArea>
           <CardMedia
             image="/static/images/cards/contemplative-reptile.jpg"
             title="Contemplative Reptile"
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h1">
-              {props.data}
+            <Typography gutterBottom variant="h5" component="h5">
+              {props.data.header}
             </Typography>
             <Typography variant="body1" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-              across all continents except Antarctica
+              {props.data.content}
             </Typography>
           </CardContent>
         </CardActionArea>
