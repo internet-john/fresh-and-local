@@ -20,7 +20,7 @@ describe("ContentCard", () => {
 
   it("Displays node name, type for produce card", () => {
     const tree = renderer
-      .create(<ContentCard orientation={''} data={{ name: 'Broccoli', type: 'Vegetable' }} />)
+      .create(<ContentCard orientation={'portrait'} data={{ name: 'Broccoli', type: 'Vegetable' }} />)
       .toJSON()
     expect(tree).toMatchSnapshot()
   });

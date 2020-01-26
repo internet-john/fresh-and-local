@@ -39,7 +39,7 @@ const SpringGrid = () => {
 
   return (
     <>
-      <ContentGridContainer data={[...data.allVegetable.edges, ...data.allFruit.edges]}  />
+      <ContentGridContainer orientation={"portrait"} data={[...data.allVegetable.edges, ...data.allFruit.edges]}  />
     </>
   );
 };

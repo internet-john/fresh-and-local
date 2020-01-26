@@ -29,14 +29,7 @@ const useStyles = makeStyles({
 export default function InfoBar(props) {
   const classes = useStyles();
 
-
-// YOU TOGGLE FRUIT SELECTOR. IT IS "TRUE" THAT YOU SELECTED FRUIT TOGGLE, 
-// BUT IT EVALUES TO FALSE AS THE CHECKED SETTING IS FALSE, WHICH THEN TURNS OFF THE VEG TOGGLE
-// SAME BEHAVIOR IF YOU WOULD BE CHECKING ACTION.SHOWVEG IN REDUCER
-
   const handleChange = toggledSwitch => props.dispatch({ type: `TOGGLE_${toggledSwitch.target.value}` });
-
-  // const handleChange = toggledSwitch => props.dispatch({ type: 'TOGGLE_SHOW_FRUIT', showFruit: true });
 
   return (
     <FormGroup className={classes.chipBar} row>

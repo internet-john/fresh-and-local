@@ -8,7 +8,7 @@ import SpringGrid from "../components/springGrid";
 
 const Spring = () => (
   <Layout>
-    <SEO title="Spring produce" />
+    <SEO title="Spring Produce" />
     <InfoBarContainer season="Spring" />
     <SpringGrid />
     <Link to="/">Go back to the homepage</Link>

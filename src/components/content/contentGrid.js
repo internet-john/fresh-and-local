@@ -28,7 +28,7 @@ export default function ContentGrid(props) {
       <Grid>
         <Grid container spacing={1}>
         {gridData && gridData.map((data, idx) => 
-            <Grid key={idx} item xs={12}>
+            <Grid key={idx} item xs={props.orientation === 'landscape' ? 12 : 3}>
               <ContentCard orientation={props.orientation} data={data} />
             </Grid>
         )}    

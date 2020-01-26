@@ -67,8 +67,8 @@ export default function ContentCard(props) {
                 {props.data.node.month}
               </Typography>
               <Typography variant="body1" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
+                {/* Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                across all continents except Antarctica */}
               </Typography>
 
             </CardContent>
