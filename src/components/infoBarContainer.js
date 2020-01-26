@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import ContentGrid from './contentGrid';
+import InfoBar from './infoBar';
 
 const mapStateToProps = state => {
     return {
@@ -9,6 +9,6 @@ const mapStateToProps = state => {
     }
 }
 
-const ContentGridContainer = connect(mapStateToProps)(ContentGrid);
+const InfoBarContainer = connect(mapStateToProps)(InfoBar);
 
-export default ContentGridContainer;
+export default InfoBarContainer;

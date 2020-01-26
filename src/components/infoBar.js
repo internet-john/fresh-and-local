@@ -29,23 +29,23 @@ const useStyles = makeStyles({
 export default function InfoBar(props) {
   const classes = useStyles();
 
-  const [state, setState] = React.useState({
-    displayFruit: true,
-    displayVeg: true,
-  });
 
-  const handleChange = name => event => {
-    setState({ ...state, [name]: event.target.checked });
-  };
+// YOU TOGGLE FRUIT SELECTOR. IT IS "TRUE" THAT YOU SELECTED FRUIT TOGGLE, 
+// BUT IT EVALUES TO FALSE AS THE CHECKED SETTING IS FALSE, WHICH THEN TURNS OFF THE VEG TOGGLE
+// SAME BEHAVIOR IF YOU WOULD BE CHECKING ACTION.SHOWVEG IN REDUCER
+
+  const handleChange = toggledSwitch => props.dispatch({ type: `TOGGLE_${toggledSwitch.target.value}` });
+
+  // const handleChange = toggledSwitch => props.dispatch({ type: 'TOGGLE_SHOW_FRUIT', showFruit: true });
 
   return (
     <FormGroup className={classes.chipBar} row>
       <FormControlLabel
         control={
           <Switch
-            checked={state.displayFruit}
-            onChange={handleChange('displayFruit')}
-            value="displayFruit"
+            checked={props.showFruit}
+            onChange={handleChange}
+            value="SHOW_FRUIT"
             color="primary"
           />
         }
@@ -54,9 +54,9 @@ export default function InfoBar(props) {
       <FormControlLabel
         control={
           <Switch
-            checked={state.displayVeg}
-            onChange={handleChange('displayVeg')}
-            value="displayVeg"
+            checked={props.showVeg}
+            onChange={handleChange}
+            value="SHOW_VEG"
             color="primary"
           />
         }
