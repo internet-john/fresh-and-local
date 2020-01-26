@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import ContentGrid from "./content/contentGrid";
+import ContentGridContainer from "./content/ContentGridContainer";
 
 const SpringGrid = () => { 
   const data = useStaticQuery(graphql`
@@ -39,7 +39,7 @@ const SpringGrid = () => {
 
   return (
     <>
-      <ContentGrid data={[...data.allVegetable.edges, ...data.allFruit.edges]}  />
+      <ContentGridContainer data={[...data.allVegetable.edges, ...data.allFruit.edges]}  />
     </>
   );
 };

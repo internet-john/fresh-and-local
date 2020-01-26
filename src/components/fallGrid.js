@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import ContentGrid from "./content/contentGrid";
+import ContentGridContainer from "./content/contentGridContainer";
 
 const FallGrid = () => { 
   const data = useStaticQuery(graphql`
@@ -39,7 +39,7 @@ const FallGrid = () => {
 
   return (
     <>
-      <ContentGrid orientation={"portrait"} data={[...data.allVegetable.edges, ...data.allFruit.edges]}  />
+      <ContentGridContainer orientation={"portrait"} data={[...data.allVegetable.edges, ...data.allFruit.edges]}  />
     </>
   );
 };

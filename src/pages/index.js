@@ -1,14 +1,8 @@
 import React from "react"
-import { createStore } from 'redux';
-import { Provider } from "react-redux";
-
-import reducer from "../reducers/appReducer";
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import ContentGrid from "../components/content/contentGrid";
-
-const store = createStore(reducer);
+import ContentGridContainer from "../components/content/ContentGridContainer";
 
 const seasonData = [
   {
@@ -34,12 +28,10 @@ const seasonData = [
 ]
 
 const IndexPage = () => (
-  <Provider store={store}>
-    <Layout>
-      <SEO title="Home" />
-      <ContentGrid orientation={'landscape'} data={seasonData} />
-    </Layout>
-  </Provider>
+  <Layout>
+    <SEO title="Home" />
+    <ContentGridContainer orientation={'landscape'} data={seasonData} />
+  </Layout>
 )
 
 export default IndexPage;
