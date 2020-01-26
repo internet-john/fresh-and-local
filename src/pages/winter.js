@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import InfoBarContainer from "../components/infoBarContainer";
+import InfoBarContainer from "../components/infoBar/infoBarContainer";
 import WinterGrid from "../components/winterGrid";
 
 const Winter = () => (

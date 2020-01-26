@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import InfoBarContainer from "../components/infoBarContainer";
+import InfoBarContainer from "../components/infoBar/infoBarContainer";
 import FallGrid from "../components/fallGrid";
 
 const Fall = () => (

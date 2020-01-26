@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
           <Header siteTitle={data.site.siteMetadata.title} />
         </div>
         <Typography component="div">
-          <main>{children}</main>
+          <main>{children ? children : null}</main>
         </Typography>
         <Typography component="div">
           <footer style={{position: 'relative', width: '100vw', bottom: '0', marginTop: '10px'}}>
