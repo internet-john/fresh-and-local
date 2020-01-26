@@ -30,10 +30,10 @@ const Layout = ({ children }) => {
       <CssBaseline />
       <Container maxWidth="lg">
         <div style={{display: "flex", justifyContent: 'space-between' }}>
-          <Header siteTitle={data.site.siteMetadata.title} />
+          <Header siteTitle={data && data.site && data.site.siteMetadata && data.site.siteMetadata.title} />
         </div>
         <Typography component="div">
-          <main>{children ? children : null}</main>
+          <main>{children ? children : []}</main>
         </Typography>
         <Typography component="div">
           <footer style={{position: 'relative', width: '100vw', bottom: '0', marginTop: '10px'}}>
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 }
 
 export default Layout

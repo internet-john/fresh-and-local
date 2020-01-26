@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import ContentGridContainer from "./content/ContentGridContainer";
+import ContentGridContainer from "./content/contentGridContainer";
 
 const WinterGrid = () => { 
   const data = useStaticQuery(graphql`

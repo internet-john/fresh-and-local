@@ -16,9 +16,9 @@ export default function ContentGrid(props) {
   let gridData = props.data;
 
   if (!props.showFruit && props.showVeg) {
-    gridData = gridData.filter(produce => produce.node.type === 'VEGETABLE');
+    gridData = gridData.filter(produce => produce.node && produce.node.type && produce.node.type === 'VEGETABLE');
   } else if (props.showFruit && !props.showVeg) {
-    gridData = gridData.filter(produce => produce.node.type === 'FRUIT');
+    gridData = gridData.filter(produce => produce.node && produce.node.type && produce.node.type === 'FRUIT');
   } else if (!props.showFruit && !props.showVeg) {
     gridData = [];
   }
@@ -27,7 +27,7 @@ export default function ContentGrid(props) {
     <Grid container className={classes.root} spacing={1}>
       <Grid>
         <Grid container spacing={1}>
-        {gridData.map((data, idx) => 
+        {gridData && gridData.map((data, idx) => 
             <Grid key={idx} item xs={12}>
               <ContentCard orientation={props.orientation} data={data} />
             </Grid>
