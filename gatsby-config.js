@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/freshest`,
   siteMetadata: {
-    title: `Fresh & Local.`,
+    title: `Fresh & Local Produce.`,
     description: `Find out what's fresh and local`,
     author: `@john-src`,
   },
@@ -25,7 +25,9 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        // Icon from Freepik and FlatIron
+        // https://www.flaticon.com/authors/freepik
+        icon: `src/images/fruit-icon.png`, 
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

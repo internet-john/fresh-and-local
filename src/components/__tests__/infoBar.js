@@ -1,12 +1,12 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import Header from "../header";
+import InfoBar from "../infoBar/infoBar";
 
-describe("Header", () => {
+describe("InfoBar", () => {
   it("renders correctly", () => {
     const tree = renderer
-      .create(<Header siteTitle="Fresh and Local" />)
+      .create(<InfoBar season="Summer" />)
       .toJSON()
     expect(tree).toMatchSnapshot()
   })

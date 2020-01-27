@@ -1,22 +1,15 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import InfoBar from "../components/infoBar";
+import InfoBarContainer from "../components/infoBar/infoBarContainer";
 import SpringGrid from "../components/springGrid";
-
-const handleDelete = () => {
-  console.info('You clicked the delete icon.');
-};
 
 const Spring = () => (
   <Layout>
-    <SEO title="Spring produce" />
-    <h1>sunshine and flowers</h1>
-    <InfoBar season="Spring" onDelete={handleDelete} />
+    <SEO title="Spring Produce" />
+    <InfoBarContainer season="Spring" />
     <SpringGrid />
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

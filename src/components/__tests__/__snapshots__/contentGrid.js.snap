@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentGrid renders correctly 1`] = `
+<div
+  className="MuiGrid-root makeStyles-root-1 MuiGrid-container MuiGrid-spacing-xs-1"
+>
+  <div
+    className="MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"
+    />
+  </div>
+</div>
+`;

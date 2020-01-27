@@ -1,11 +1,13 @@
 import React from 'react';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Chip from '@material-ui/core/Chip';
 import Switch from '@material-ui/core/Switch';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
+  chipBar: {
+    marginBottom: '20px'
+  },
   winter: {
     backgroundColor: '#C4FAF8',
     margin: '10px 20px 10px 0'
@@ -27,24 +29,16 @@ const useStyles = makeStyles({
 export default function InfoBar(props) {
   const classes = useStyles();
 
-  const [state, setState] = React.useState({
-    displayFruit: true,
-    displayVeg: true,
-  });
-
-  const handleChange = name => event => {
-    setState({ ...state, [name]: event.target.checked });
-  };
+  const handleChange = toggledSwitch => props.dispatch({ type: `TOGGLE_${toggledSwitch.target.value}` });
 
   return (
-    <FormGroup row>
-      <Chip className={classes[props.season.toLowerCase()]} label={props.season} />
+    <FormGroup className={classes.chipBar} row>
       <FormControlLabel
         control={
           <Switch
-            checked={state.displayFruit}
-            onChange={handleChange('displayFruit')}
-            value="displayFruit"
+            checked={props.showFruit}
+            onChange={handleChange}
+            value="SHOW_FRUIT"
             color="primary"
           />
         }
@@ -53,9 +47,9 @@ export default function InfoBar(props) {
       <FormControlLabel
         control={
           <Switch
-            checked={state.displayVeg}
-            onChange={handleChange('displayVeg')}
-            value="displayVeg"
+            checked={props.showVeg}
+            onChange={handleChange}
+            value="SHOW_VEG"
             color="primary"
           />
         }

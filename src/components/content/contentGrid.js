@@ -13,13 +13,22 @@ const useStyles = makeStyles(theme => ({
 
 export default function ContentGrid(props) {
   const classes = useStyles();
+  let gridData = props.data;
+
+  if (!props.showFruit && props.showVeg) {
+    gridData = gridData.filter(produce => produce.node && produce.node.type && produce.node.type === 'VEGETABLE');
+  } else if (props.showFruit && !props.showVeg) {
+    gridData = gridData.filter(produce => produce.node && produce.node.type && produce.node.type === 'FRUIT');
+  } else if (!props.showFruit && !props.showVeg) {
+    gridData = [];
+  }
 
   return (
     <Grid container className={classes.root} spacing={1}>
       <Grid>
         <Grid container spacing={1}>
-        {props.data.map((data, idx) => 
-            <Grid key={idx} item xs={12}>
+        {gridData && gridData.map((data, idx) => 
+            <Grid key={idx} item xs={props.orientation === 'landscape' ? 12 : 3}>
               <ContentCard orientation={props.orientation} data={data} />
             </Grid>
         )}    

@@ -1,8 +1,11 @@
 /**
- * TODO: Move data to CDN
+ * TODO: Move data to CDN, 
  * 
  * https://www.contentful.com/developers/docs/javascript/tutorials/using-contentful-graphql-with-javascript/
  * 
+ * TODO: obtain additional data via APIs 
+ * 
+ * https://fdc.nal.usda.gov/api-guide.html#bkmk-1
  */
 
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
