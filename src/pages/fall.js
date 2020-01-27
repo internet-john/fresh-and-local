@@ -11,7 +11,6 @@ const Fall = () => (
     <SEO title="Fall produce" />
     <InfoBarContainer season="Fall" />
     <FallGrid />
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

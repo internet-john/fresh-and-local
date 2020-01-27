@@ -11,7 +11,6 @@ const Spring = () => (
     <SEO title="Spring Produce" />
     <InfoBarContainer season="Spring" />
     <SpringGrid />
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

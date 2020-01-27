@@ -2,7 +2,7 @@ import React from "react"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import ContentGridContainer from "../components/content/ContentGridContainer";
+import ContentGridContainer from "../components/content/contentGridContainer";
 
 const seasonData = [
   {
@@ -32,6 +32,6 @@ const IndexPage = () => (
     <SEO title="Home" />
     <ContentGridContainer orientation={'landscape'} data={seasonData} />
   </Layout>
-)
+);
 
 export default IndexPage;
