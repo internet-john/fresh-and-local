@@ -1,14 +1,12 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import ContentGridContainer from "./content/contentGridContainer";
+import ContentGridContainer from './content/contentGridContainer';
 
-const SummerGrid = () => { 
+const SummerGrid = () => {
   const data = useStaticQuery(graphql`
     query SummerProduceQuery {
-      allVegetable(filter: {
-        freshMonths: {in: [6,7,8]} 
-      }) {
+      allVegetable(filter: { freshMonths: { in: [6, 7, 8] } }) {
         edges {
           node {
             id
@@ -20,9 +18,7 @@ const SummerGrid = () => {
           }
         }
       }
-      allFruit(filter: {
-        freshMonths: {in: [6,7,8]} 
-      }) {
+      allFruit(filter: { freshMonths: { in: [6, 7, 8] } }) {
         edges {
           node {
             id
@@ -39,7 +35,10 @@ const SummerGrid = () => {
 
   return (
     <>
-      <ContentGridContainer context={"SEASON_PG"} data={[...data.allVegetable.edges, ...data.allFruit.edges]}  />
+      <ContentGridContainer
+        context={'SEASON_PG'}
+        data={[...data.allVegetable.edges, ...data.allFruit.edges]}
+      />
     </>
   );
 };

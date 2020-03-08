@@ -1,10 +1,9 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import InfoBarContainer from "../components/infoBar/infoBarContainer";
-import SpringGrid from "../components/springGrid";
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import InfoBarContainer from '../components/infoBar/infoBarContainer';
+import SpringGrid from '../components/springGrid';
 
 const Spring = () => (
   <Layout>
@@ -12,6 +11,6 @@ const Spring = () => (
     <InfoBarContainer season="Spring" />
     <SpringGrid />
   </Layout>
-)
+);
 
 export default Spring;

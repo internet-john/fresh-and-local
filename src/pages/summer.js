@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import InfoBarContainer from "../components/infoBar/infoBarContainer";
-import SummerGrid from "../components/summerGrid";
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import InfoBarContainer from '../components/infoBar/infoBarContainer';
+import SummerGrid from '../components/summerGrid';
 
 const Summer = () => (
   <Layout>
@@ -11,6 +11,6 @@ const Summer = () => (
     <InfoBarContainer season="Summer" />
     <SummerGrid />
   </Layout>
-)
+);
 
-export default Summer
+export default Summer;
