@@ -2,11 +2,16 @@
 
 exports[`ContentCard Displays header and content fields for season card 1`] = `
 <div
-  className="MuiPaper-root MuiCard-root makeStyles-winter-2 MuiPaper-elevation1 MuiPaper-rounded"
+  className="MuiPaper-root MuiCard-root makeStyles-winter-7 MuiPaper-elevation1 MuiPaper-rounded"
 >
   <a
-    className="makeStyles-link-1"
+    className="makeStyles-link-6"
     href="/winter"
+    location={
+      Object {
+        "page": "Winter",
+      }
+    }
   >
     <button
       className="MuiButtonBase-root MuiCardActionArea-root"
@@ -26,9 +31,216 @@ exports[`ContentCard Displays header and content fields for season card 1`] = `
       type="button"
     >
       <div
-        className="MuiCardMedia-root"
-        title=""
+        className="MuiCardContent-root"
+      >
+        <h5
+          className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+        >
+          Winter
+        </h5>
+        <p
+          className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+        >
+          December 21 - March 19 2020
+        </p>
+      </div>
+      <span
+        className="MuiCardActionArea-focusHighlight"
       />
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+  </a>
+</div>
+`;
+
+exports[`ContentCard Displays node name, type, general and nutritional info for produce card 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <div
+    className="MuiCardHeader-root"
+  >
+    <div
+      className="MuiCardHeader-avatar"
+    >
+      <div
+        aria-label="produce-card"
+        className="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-5 MuiAvatar-colorDefault"
+      >
+        V
+      </div>
+    </div>
+    <div
+      className="MuiCardHeader-content"
+    >
+      <span
+        className="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+      >
+        Broccoli
+      </span>
+      <span
+        className="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+      >
+        Vegetable
+      </span>
+    </div>
+    <div
+      className="MuiCardHeader-action"
+    >
+      <button
+        aria-label="settings"
+        className="MuiButtonBase-root MuiIconButton-root"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="MuiCardContent-root"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+    >
+      Eat it raw or cooked, and in dishes such as soups, stews, salads, or on its own.
+    </p>
+  </div>
+  <div
+    className="MuiCardActions-root"
+  >
+    <button
+      aria-label="add to favorites"
+      className="MuiButtonBase-root MuiIconButton-root"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </svg>
+      </span>
+    </button>
+    <button
+      aria-expanded={false}
+      aria-label="show more"
+      className="MuiButtonBase-root MuiIconButton-root makeStyles-expand-3"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiIconButton-label"
+      >
+        <svg
+          aria-hidden="true"
+          className="MuiSvgIcon-root"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`ContentCard renders correctly 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root makeStyles-winter-7 MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <a
+    className="makeStyles-link-6"
+    href="/winter"
+    location={
+      Object {
+        "page": "Winter",
+      }
+    }
+  >
+    <button
+      className="MuiButtonBase-root MuiCardActionArea-root"
+      disabled={false}
+      onBlur={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
       <div
         className="MuiCardContent-root"
       >
@@ -50,56 +262,3 @@ exports[`ContentCard Displays header and content fields for season card 1`] = `
   </a>
 </div>
 `;
-
-exports[`ContentCard Displays node name, type for produce card 1`] = `
-<div
-  className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
->
-  <button
-    className="MuiButtonBase-root MuiCardActionArea-root"
-    disabled={false}
-    onBlur={[Function]}
-    onDragLeave={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    onMouseDown={[Function]}
-    onMouseLeave={[Function]}
-    onMouseUp={[Function]}
-    onTouchEnd={[Function]}
-    onTouchMove={[Function]}
-    onTouchStart={[Function]}
-    tabIndex={0}
-    type="button"
-  >
-    <div
-      className="MuiCardMedia-root"
-      title=""
-    />
-    <div
-      className="MuiCardContent-root"
-    >
-      <h1
-        className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
-      />
-      <h3
-        className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
-      />
-      <p
-        className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
-      />
-      <p
-        className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
-      />
-    </div>
-    <span
-      className="MuiCardActionArea-focusHighlight"
-    />
-    <span
-      className="MuiTouchRipple-root"
-    />
-  </button>
-</div>
-`;
-
-exports[`ContentCard renders correctly 1`] = `null`;

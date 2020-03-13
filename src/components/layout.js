@@ -14,6 +14,7 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
 import Header from './header';
+import { resetState } from '../redux/actions';
 
 const Layout = connect()(props => {
   const data = useStaticQuery(graphql`
@@ -26,7 +27,9 @@ const Layout = connect()(props => {
     }
   `);
 
-  const handleClick = () => props.dispatch({ type: 'RESET_STATE' });
+  const handleClick = () => {
+    props.dispatch(resetState());
+  };
 
   return (
     <React.Fragment>
