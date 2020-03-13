@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -11,22 +12,22 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ContentGrid(props) {
+const ContentGrid = props => {
   const classes = useStyles();
   let gridData = props.data;
+  const showFruit = useSelector(state => state.showFruit);
+  const showVeg = useSelector(state => state.showVeg);
 
-  if (!props.showFruit && props.showVeg) {
+  if (!showFruit && showVeg) {
     gridData = gridData.filter(
       produce =>
         produce.node && produce.node.type && produce.node.type === 'VEGETABLE'
     );
-  } else if (props.showFruit && !props.showVeg) {
+  } else if (showFruit && !showVeg) {
     gridData = gridData.filter(
       produce =>
         produce.node && produce.node.type && produce.node.type === 'FRUIT'
     );
-  } else if (!props.showFruit && !props.showVeg) {
-    gridData = [];
   }
 
   return (
@@ -38,7 +39,7 @@ export default function ContentGrid(props) {
               <Grid
                 key={idx}
                 item
-                xs={props.context === 'HOME_PG' ? 12 : 'fitContent'}
+                xs={props.context === 'HOME_PG' ? 12 : 'auto'}
               >
                 <ContentCard context={props.context} data={data} />
               </Grid>
@@ -47,4 +48,6 @@ export default function ContentGrid(props) {
       </Grid>
     </Grid>
   );
-}
+};
+
+export default ContentGrid;

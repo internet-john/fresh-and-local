@@ -27,12 +27,14 @@ module.exports = {
         display: `minimal-ui`,
         // Icon from Freepik and FlatIron
         // https://www.flaticon.com/authors/freepik
-        icon: `src/images/fruit-icon.png`, 
+        icon: `src/images/fruit-icon.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    `gatsby-plugin-material-ui`
+    `gatsby-plugin-material-ui`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
-}
+};
