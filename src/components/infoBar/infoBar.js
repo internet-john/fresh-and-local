@@ -4,6 +4,8 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 import { makeStyles } from '@material-ui/core/styles';
 
+import { toggleProduceFilter } from '../../redux/actions';
+
 const useStyles = makeStyles({
   chipBar: {
     marginBottom: '20px',
@@ -30,8 +32,12 @@ export default function InfoBar(props) {
   const classes = useStyles();
 
   const handleChange = toggledSwitch =>
-    props.dispatch({ type: `TOGGLE_${toggledSwitch.target.value}` });
-
+    props.dispatch(
+      toggleProduceFilter(
+        toggledSwitch.target.value,
+        toggledSwitch.target.checked
+      )
+    );
   return (
     <FormGroup className={classes.chipBar} row>
       <FormControlLabel

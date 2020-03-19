@@ -1,9 +1,10 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 
 import SEO from '../components/seo';
 import Layout from '../components/layout';
-import ContentGridContainer from '../components/content/contentGridContainer';
-
+import ContentGrid from '../components/content/contentGrid';
+import { showHomePg } from '../redux/actions';
 const seasonData = [
   {
     header: 'Winter',
@@ -27,11 +28,17 @@ const seasonData = [
   },
 ];
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <ContentGridContainer context={'HOME_PG'} data={seasonData} />
-  </Layout>
-);
+const IndexPage = () => {
+  const dispatch = useDispatch();
+
+  dispatch(showHomePg());
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <ContentGrid context={'HOME_PG'} data={seasonData} />
+    </Layout>
+  );
+};
 
 export default IndexPage;

@@ -6,8 +6,9 @@ exports[`Header renders correctly 1`] = `
     Object {
       "background": "transparent",
       "color": "#000",
-      "fontSize": "48px",
+      "fontSize": "42px",
       "letterSpacing": "-7.5px",
+      "lineHeight": "initial",
     }
   }
 >

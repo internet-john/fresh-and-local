@@ -1,9 +1,14 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import ContentGridContainer from './content/contentGridContainer';
+import ContentGrid from './content/contentGrid';
+import { showSeasonPg } from '../redux/actions';
 
 const WinterGrid = () => {
+  const dispatch = useDispatch();
+  dispatch(showSeasonPg());
+
   const data = useStaticQuery(graphql`
     query WinterProduceQuery {
       allVegetable(filter: { freshMonths: { in: [12, 1, 2] } }) {
@@ -15,6 +20,8 @@ const WinterGrid = () => {
             storageMonths
             freshMonths
             location
+            generalInfo
+            nutritionInfo
           }
         }
       }
@@ -27,6 +34,8 @@ const WinterGrid = () => {
             storageMonths
             freshMonths
             location
+            generalInfo
+            nutritionInfo
           }
         }
       }
@@ -35,7 +44,7 @@ const WinterGrid = () => {
 
   return (
     <>
-      <ContentGridContainer
+      <ContentGrid
         context={'SEASON_PG'}
         data={[...data.allVegetable.edges, ...data.allFruit.edges]}
       />
