@@ -11,6 +11,7 @@ const Header = props => (
       letterSpacing: `-7.5px`,
       lineHeight: `initial`,
     }}
+    data-automation-id="freshlocal__header"
   >
     <h1 style={{ margin: 0 }}>
       <Link

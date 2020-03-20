@@ -31,7 +31,12 @@ const ContentGrid = props => {
   }
 
   return (
-    <Grid container className={classes.root} spacing={1}>
+    <Grid
+      container
+      className={classes.root}
+      spacing={1}
+      data-automation-id="freshlocal__contentgrid"
+    >
       <Grid>
         <Grid container spacing={1}>
           {gridData &&

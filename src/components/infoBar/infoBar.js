@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
@@ -28,22 +29,28 @@ const useStyles = makeStyles({
   },
 });
 
-export default function InfoBar(props) {
+const InfoBar = () => {
   const classes = useStyles();
+  const { showFruit, showVeg } = useSelector(state => state);
+  const dispatch = useDispatch();
 
   const handleChange = toggledSwitch =>
-    props.dispatch(
+    dispatch(
       toggleProduceFilter(
         toggledSwitch.target.value,
         toggledSwitch.target.checked
       )
     );
   return (
-    <FormGroup className={classes.chipBar} row>
+    <FormGroup
+      className={classes.chipBar}
+      row
+      data-automation-id="freshlocal__infobar"
+    >
       <FormControlLabel
         control={
           <Switch
-            checked={props.showFruit}
+            checked={showFruit}
             onChange={handleChange}
             value="SHOW_FRUIT"
             color="primary"
@@ -54,7 +61,7 @@ export default function InfoBar(props) {
       <FormControlLabel
         control={
           <Switch
-            checked={props.showVeg}
+            checked={showVeg}
             onChange={handleChange}
             value="SHOW_VEG"
             color="primary"
@@ -64,4 +71,6 @@ export default function InfoBar(props) {
       />
     </FormGroup>
   );
-}
+};
+
+export default InfoBar;

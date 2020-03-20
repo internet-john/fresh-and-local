@@ -69,7 +69,10 @@ const ContentCard = props => {
   };
 
   return props.context === 'HOME_PG' ? (
-    <Card className={classes[props.data.header.toLowerCase()]}>
+    <Card
+      className={classes[props.data.header.toLowerCase()]}
+      data-automation-id="contentgrid__contentcard--season"
+    >
       <Link
         className={classes.link}
         to={`/${props.data.header.toLowerCase()}`}
@@ -77,10 +80,20 @@ const ContentCard = props => {
       >
         <CardActionArea>
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h5">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h5"
+              data-automation-id="contentgrid__contentcard--season-name"
+            >
               {props.data.header}
             </Typography>
-            <Typography variant="body1" color="textSecondary" component="p">
+            <Typography
+              variant="body1"
+              color="textSecondary"
+              component="p"
+              data-automation-id="contentgrid__contentcard--season-daterange"
+            >
               {props.data.content}
             </Typography>
           </CardContent>
@@ -88,7 +101,10 @@ const ContentCard = props => {
       </Link>
     </Card>
   ) : (
-    <Card className={classes.root}>
+    <Card
+      className={classes.root}
+      data-automation-id="contentgrid__contentcard--produce"
+    >
       <CardHeader
         avatar={
           <Avatar aria-label="produce-card" className={classes.avatar}>
@@ -110,7 +126,9 @@ const ContentCard = props => {
         }}
       /> */}
       <CardContent>
-        <Typography paragraph>{props.data.node.generalInfo}</Typography>
+        <Typography paragraph data-automation-id="contentcard__generalinfo">
+          {props.data.node.generalInfo}
+        </Typography>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -123,6 +141,9 @@ const ContentCard = props => {
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
+          data-automation-id={`contentcard__showmore--${
+            expanded ? 'expanded' : 'collapsed'
+          }`}
         >
           <ExpandMoreIcon />
         </IconButton>

@@ -129,7 +129,7 @@ exports[`ContentCard Displays node name, type, general and nutritional info for 
     className="MuiCardContent-root"
   >
     <p
-      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+      className="MuiTypography-root MuiTypography-body1 MuiTypography-paragraph"
     >
       Eat it raw or cooked, and in dishes such as soups, stews, salads, or on its own.
     </p>

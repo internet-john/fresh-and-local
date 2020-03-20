@@ -2,13 +2,13 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import InfoBarContainer from '../components/infoBar/infoBarContainer';
+import InfoBar from '../components/infoBar/infoBar';
 import SummerGrid from '../components/summerGrid';
 
 const Summer = () => (
   <Layout>
     <SEO title="Summer Produce" />
-    <InfoBarContainer season="Summer" />
+    <InfoBar season="Summer" />
     <SummerGrid />
   </Layout>
 );
