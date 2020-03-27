@@ -2,13 +2,13 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import InfoBarContainer from '../components/infoBar/infoBarContainer';
+import InfoBar from '../components/infoBar/infoBar';
 import SpringGrid from '../components/springGrid';
 
 const Spring = () => (
   <Layout>
     <SEO title="Spring Produce" />
-    <InfoBarContainer season="Spring" />
+    <InfoBar season="Spring" />
     <SpringGrid />
   </Layout>
 );

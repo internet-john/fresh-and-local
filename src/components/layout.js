@@ -50,7 +50,11 @@ const Layout = connect()(props => {
           <main>{props.children ? props.children : []}</main>
         </Typography>
         <Typography component="div">
-          <Link to="/" onClick={handleClick}>
+          <Link
+            to="/"
+            onClick={handleClick}
+            data-automation-id="contentcard__homepg-link"
+          >
             Go back to the homepage
           </Link>
         </Typography>

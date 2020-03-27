@@ -17,7 +17,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       generalInfo:
         'Eat it raw or cooked, and in dishes such as soups, stews, salads, or on its own.',
       nutritionInfo:
-        'The nutrients in asparagus can support heart and bone health, while the folate and iron that it contains may be especially beneficial during pregnancy.',
+        'Support heart and bone health, while the folate and iron that it contains may be especially beneficial during pregnancy.',
     },
     {
       name: 'Beans, String',
@@ -26,6 +26,8 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [7, 8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo:
+        'Rich source of vitamins A, C, and K, and of folic acid and fiber. They have similar nutritional benefits to snap peas and okra.',
     },
     {
       name: 'Beans, Shell',
@@ -34,6 +36,8 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [9, 10, 11, 12],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo:
+        'Rich source of vitamins A, C, and K, and of folic acid and fiber. They have similar nutritional benefits to snap peas and okra.',
     },
     {
       name: 'Beets',
@@ -42,6 +46,8 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [6, 7, 8, 9, 10, 11],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo:
+        'Reduce blood pressure, improve digestion, and lower the risk of diabetes.',
     },
     {
       name: 'Beet Greens',
@@ -50,6 +56,8 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [5, 6, 7, 8, 9],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo:
+        'Reduce blood pressure, improve digestion, and lower the risk of diabetes.',
     },
     {
       name: 'Broccoli',
@@ -59,6 +67,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       location: 'New York',
       generalInfo:
         'Broccoli has a reputation as a superfood. It is low in calories but contains a wealth of nutrients and antioxidants that support many aspects of human health.',
+      nutritionInfo: '',
     },
     {
       name: 'Brussels Sprouts',
@@ -66,7 +75,10 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       storageMonths: [],
       freshMonths: [9, 10, 11],
       location: 'New York',
-      generalInfo: '',
+      generalInfo:
+        'Brussels sprouts are a staple of Christmas and Thanksgiving dinner. However, including more of these low calorie, nutritionally dense vegetables in the diet could provide significant health benefits.',
+      nutritionInfo:
+        'Brussels sprouts are an excellent source of protein, and just 88 grams (g), or 1 cup, of raw Brussels sprouts meets the National Institutes of Health’s (NIH) recommended daily requirements for vitamin C and vitamin K.',
     },
     {
       name: 'Cabbage',
@@ -74,7 +86,10 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       storageMonths: [1, 2, 3, 12],
       freshMonths: [5, 6, 7, 8, 9, 10, 11],
       location: 'New York',
-      generalInfo: '',
+      generalInfo:
+        'Cruciferous vegetables like cabbage, kale, and broccoli are notorious for being chock-full of beneficial nutrients. If you are trying to improve your diet, cruciferous vegetables are a good place to start.',
+      nutritionInfo:
+        'Cabbage helps protect against radiation, prevent cancer, and reduce heart disease risk.',
     },
     {
       name: 'Carrots',
@@ -83,6 +98,8 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [6, 7, 8, 9, 10, 11],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo:
+        'Carrots are rich in vitamins, minerals, and fiber. They are also a good source of antioxidants.',
     },
     {
       name: 'Cauliflower',
@@ -91,6 +108,8 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [8, 9, 10, 11],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo:
+        'Cauliflower is a cruciferous vegetable that is naturally high in fiber, B-vitamins, antioxidants, and phytonutrients that protect against cancer.',
     },
     {
       name: 'Celery',
@@ -98,7 +117,10 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       storageMonths: [],
       freshMonths: [8, 9, 10],
       location: 'New York',
-      generalInfo: '',
+      generalInfo:
+        'Celery is part of the Apiaceae family, which includes carrots, parsnips, parsley, and celeriac. Its crunchy stalks make the vegetable a popular low-calorie snack, and it may provide a range of health benefits.',
+      nutritionInfo:
+        'The fiber in celery can benefit the digestive and cardiovascular systems. Celery also contains antioxidants that may play a role in preventing disease.',
     },
     {
       name: 'Collard Greens',
@@ -106,7 +128,9 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       storageMonths: [],
       freshMonths: [7, 8, 9, 10, 11, 12],
       location: 'New York',
-      generalInfo: '',
+      generalInfo:
+        'Collard greens are part of the cruciferous vegetable family. They contain nutrients that can play an important role in a healthful diet.',
+      nutritionInfo: '',
     },
     {
       name: 'Corn',
@@ -114,7 +138,9 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       storageMonths: [],
       freshMonths: [7, 8, 9, 10],
       location: 'New York',
-      generalInfo: '',
+      generalInfo:
+        'Corn is in everything from soda to cereal. However, corn has nutritional benefits, and there is no evidence that it is harmful to health.',
+      nutritionInfo: '',
     },
     {
       name: 'Cucumbers',
@@ -122,7 +148,9 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       storageMonths: [],
       freshMonths: [7, 8, 9],
       location: 'New York',
-      generalInfo: '',
+      generalInfo:
+        'Cucumbers have a mild, refreshing taste and a high water content. They can help relieve dehydration and are pleasant to eat in hot weather. People eat cucumber as a savory food, but it is a fruit. It also features in some beauty products.',
+      nutritionInfo: 'GOod for hydration, bone health, cardiovascular health',
     },
     {
       name: 'Eggplant',
@@ -131,6 +159,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     // {
     //     name: 'Fennel',
@@ -153,6 +182,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Lettuce',
@@ -161,6 +191,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [5, 6, 7, 8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Leeks',
@@ -169,6 +200,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Onions',
@@ -177,6 +209,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Parsnips',
@@ -185,6 +218,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [4, 5, 10, 11, 12],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Peas',
@@ -193,6 +227,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [6, 7, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Peppers',
@@ -201,6 +236,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [7, 8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Potatoes',
@@ -209,6 +245,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [7, 8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Pumpkins',
@@ -217,6 +254,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Radishes',
@@ -225,6 +263,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [5, 6, 7, 8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Rhubarb',
@@ -233,6 +272,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [5, 6, 7],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Spinach',
@@ -241,6 +281,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [5, 6, 7, 8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Squash, Summer',
@@ -249,6 +290,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [5, 6, 7, 8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Squash, Winter',
@@ -257,6 +299,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Swiss Chard',
@@ -265,6 +308,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [6, 7, 8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Tomatoes',
@@ -273,6 +317,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [7, 8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Turnips',
@@ -281,6 +326,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Turnip Greens',
@@ -289,6 +335,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [5, 6, 7, 8],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
   ];
 
@@ -300,6 +347,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [7, 8, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Blackberries',
@@ -308,6 +356,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [8],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Blueberries',
@@ -316,6 +365,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [7, 8, 9],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Cantaloupes',
@@ -324,6 +374,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [8, 9],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Cherries',
@@ -332,6 +383,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [7],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Currants',
@@ -340,6 +392,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [8],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Grapes',
@@ -348,6 +401,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Peaches',
@@ -356,6 +410,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [7, 8, 9],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Pears',
@@ -364,6 +419,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Plums',
@@ -372,6 +428,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [7, 8, 9],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Prunes',
@@ -380,6 +437,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Strawberries',
@@ -388,6 +446,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [6, 7],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Raspberries',
@@ -396,6 +455,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [7, 9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
     {
       name: 'Watermelon',
@@ -404,6 +464,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       freshMonths: [9, 10],
       location: 'New York',
       generalInfo: '',
+      nutritionInfo: '',
     },
   ];
 
